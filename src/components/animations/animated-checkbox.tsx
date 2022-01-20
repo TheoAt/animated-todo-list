@@ -13,9 +13,9 @@ const outlineBoxPath = 'M24 0.5H40C48.5809 0.5 54.4147 2.18067 58.117 5.88299C61
 const AnimatedPath = Animated.createAnimatedComponent(Path)
 
 interface Props {
-    checked?: boolean,
-    highlightColor: string,
-    checkmarkColor: string,
+    checked?: boolean
+    highlightColor: string
+    checkmarkColor: string
     boxOutlineColor: string
 }
 
