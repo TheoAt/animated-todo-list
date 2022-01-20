@@ -11,9 +11,9 @@ export default function MainScreen() {
     }, [])
 
     return(
-        <Center _dark={{bg: 'blueGray.900'}} _light={{bg: 'blueGray.50'}} px={4} flex={1}>
-            <VStack space={5} alignItems="center">
-                <TaskItem isDone={checked} onToggleCheckbox={handlePressCheckbox} />
+        <Center _dark={{bg: 'blueGray.900'}} _light={{bg: 'blueGray.50'}} flex={1}>
+            <VStack space={5} alignItems="center" w='full'>
+                <TaskItem isDone={checked} onToggleCheckbox={handlePressCheckbox} subject='Task Item'/>
                 <ThemeToggle />
             </VStack>
         </Center>
