@@ -14,7 +14,7 @@ const Header = ({ title, image, children }: Props) => {
             <Image position='absolute' left={0} right={0} bottom={0} w='full' h='300px' resizeMode='cover' source={image} alignItems='center' alt='hearder_image' />
             {children}
             <Box flex={1} />
-            <Heading color='white' top={4} p={6} size='xl'>
+            <Heading color='white' top={2} p={6} size={'xl'}>
                 {title}
             </Heading>
         </VStack>

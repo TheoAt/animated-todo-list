@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react'
-import { VStack, Fab, Icon, useColorModeValue } from 'native-base'
+import { Center, VStack, Fab, Icon, useColorModeValue } from 'native-base'
 import { AntDesign } from '@expo/vector-icons'
 import AnimatedColorBox from '../components/animations/animated-color-box'
 import TaskList from '../components/task-list'
@@ -59,11 +59,11 @@ export default function HomeScreen() {
 
     return(
         <AnimatedColorBox flex={1} bg={useColorModeValue('warmGray.50', 'primary.900')} w="full">
-            <Header title='Quoi de neuf, Théo !' image={require('../assets/header_banner.gif')}>
+            <Header title='Quoi de neuf, Theo !' image={require('../assets/header_banner.gif')}>
                 <Navbar />
             </Header>
 
-            <VStack flex={1} space={1} bg={useColorModeValue('warmGray.50', 'primary.900')} mt="-8px" borderTopLeftRadius="20px" borderTopRightRadius="20px" pt="20px">
+            <VStack flex={1} space={1} bg={useColorModeValue('warmGray.50', 'primary.900')} mt="-18px" borderTopLeftRadius="20px" borderTopRightRadius="20px" pt="20px">
                 <TaskList
                     data={data}
                     onToggleItem={handleToggleTaskItem}
