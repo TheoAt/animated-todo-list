@@ -7,7 +7,14 @@ const Drawer = createDrawerNavigator()
 
 const App = () => {
     return(
-        <Drawer.Navigator initialRouteName="Home">
+        <Drawer.Navigator 
+            initialRouteName="Home" 
+            screenOptions={{
+                headerShown: false,
+                drawerType: 'back',
+                overlayColor: '#000000'
+            }
+        }>
             <Drawer.Screen name="Home" component={HomeScreen} />
             <Drawer.Screen name="About" component={AboutScreen} />
         </Drawer.Navigator>

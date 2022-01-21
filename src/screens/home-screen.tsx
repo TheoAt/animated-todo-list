@@ -1,10 +1,11 @@
 import React, { useCallback, useState } from 'react'
-import { Center, VStack, Fab, Icon, useColorModeValue } from 'native-base'
+import { VStack, Fab, Icon, useColorModeValue } from 'native-base'
 import { AntDesign } from '@expo/vector-icons'
 import AnimatedColorBox from '../components/animations/animated-color-box'
-import ThemeToggle from '../components/theme-toggle'
 import TaskList from '../components/task-list'
 import shortid from 'shortid'
+import Header from '../components/header'
+import Navbar from '../components/navbar'
 
 const initialData = [
     {
@@ -58,7 +59,11 @@ export default function HomeScreen() {
 
     return(
         <AnimatedColorBox flex={1} bg={useColorModeValue('warmGray.50', 'primary.900')} w="full">
-            <VStack space={5} alignItems="center" w='full'>
+            <Header title='Quoi de neuf, Théo !' image={require('../assets/header_banner.gif')}>
+                <Navbar />
+            </Header>
+
+            <VStack flex={1} space={1} bg={useColorModeValue('warmGray.50', 'primary.900')} mt="-8px" borderTopLeftRadius="20px" borderTopRightRadius="20px" pt="20px">
                 <TaskList
                     data={data}
                     onToggleItem={handleToggleTaskItem}
@@ -68,7 +73,6 @@ export default function HomeScreen() {
                     onRemoveItem={handleRemoveItem}
                     editingItemId={editingItemId}
                 />
-                <ThemeToggle />
             </VStack>
 
             <Fab 
