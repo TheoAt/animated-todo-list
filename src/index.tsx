@@ -2,13 +2,15 @@ import React from "react"
 import { createDrawerNavigator } from "@react-navigation/drawer"
 import HomeScreen from "./screens/home-screen"
 import AboutScreen from './screens/about-screen'
+import Sidebar from "./components/sidebar"
 
 const Drawer = createDrawerNavigator()
 
 const App = () => {
     return(
         <Drawer.Navigator 
-            initialRouteName="Home" 
+            initialRouteName="Home"
+            drawerContent={props => <Sidebar {...props} />}
             screenOptions={{
                 headerShown: false,
                 drawerType: 'back',
