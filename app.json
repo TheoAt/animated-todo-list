@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "animated-todo-list",
+    "name": "Toudou List",
     "slug": "animated-todo-list",
+    "description": "Ma première application en React Native : une todo-list animée.",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -17,9 +18,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "buildNumber": "1.0.0"
     },
     "android": {
+      "package": "fr.dev_theoat.toudou_list",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
