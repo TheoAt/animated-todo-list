@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react'
-import { Center, VStack, Fab, Icon, useColorModeValue } from 'native-base'
+import { VStack, Fab, Icon, useColorModeValue } from 'native-base'
 import { AntDesign } from '@expo/vector-icons'
 import AnimatedColorBox from '../components/animations/animated-color-box'
 import TaskList from '../components/task-list'

@@ -1,14 +1,15 @@
 {
   "expo": {
-    "name": "animated-todo-list",
+    "name": "Toudou List",
     "slug": "animated-todo-list",
+    "description": "Ma première application en React Native : une todo-list animée.",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/icon_todo_list.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#161b22"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -17,16 +18,19 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "buildNumber": "1.0.2"
     },
     "android": {
+      "package": "fr.dev_theoat.toudou_list",
+      "versionCode": 2,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/icon_todo_list.png"
     }
   }
 }
